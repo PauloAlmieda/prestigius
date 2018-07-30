@@ -1,0 +1,331 @@
+/*
+	99Lime.com HTML KickStart by Joshua Gatcke
+	style.css
+
+	*/
+
+/*---------------------------------
+	IMPORTS
+	-----------------------------------*/
+	@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+
+/*---------------------------------
+	OVERRIDES
+	-----------------------------------*/
+	h1,h2,h3,h4,h5,h6{
+		font-family: "Times New Roman", Times, serif;
+		font-weight:normal;
+	}
+	h3{
+		font-size: 20px;
+	}
+	
+
+	thead th,
+	tbody th{
+		font-family: "Times New Roman", Times, serif;
+
+	}
+	.all{
+		font-family: "Times New Roman", Times, serif;
+		color:#C02046;
+		width:100%;
+
+	}
+	#domeio{
+
+		font-family: "Times New Roman", Times, serif;
+		font-weight: bold;
+		font-size: 40px;
+		margin-top: 20px;
+		color: #8B0A50;
+
+	}
+	.home{
+		background-image:url(fotos/estudo_home2.png);
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-color:#040302;
+
+	}
+
+	.quadro{
+		position: relative;
+		width: 60%;
+		height: 0 auto;
+		margin: 0 auto;
+		top: 470px;
+		border-radius: 3px;
+		background-color: #FFFFFF;
+		
+		text-align: center;
+	}
+
+	.bloco
+	{
+		
+		position: absolute;
+		left: 10%;
+		right: 10%;
+		width: auto;
+		height:auto;
+		background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(224,224,224,1) 100%);
+		
+		top: 96%;
+
+	}
+	.bloco img{
+
+		height: 70px;
+		width: 300px;
+	}
+
+	
+	.banner{
+		border:0 ;
+		position: absolute;
+
+		
+	}
+	.vejamais{
+		width: 300px;
+		height: 300px;
+	}
+	.minilogo{
+		width: 50px;
+		height: 50px;
+	}
+
+	.slideshow{
+		clear:both;
+		margin:0;
+		padding:0;
+		width:auto;
+		height:auto;
+		overflow:hidden;
+	}
+
+	.slideshow li{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		height: 500px;
+		float:left;
+		display:block;
+	}
+	.bx-wrapper img {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.gallery{
+		margin-top: 30px;
+
+	}
+	.formulario{
+
+	}
+	.rodape{
+		position: relative;
+		background-color: #C02046;
+		color: #FFFFFF;
+		width: 100%;
+		font-family: "Times New Roman", Times, serif;
+		height: 100%;
+		text-indent: 270px;
+
+	}
+	.rodape input{
+		position: relative;
+
+		width: 360px;
+		left: 270px;
+	}
+
+	.gallery a{
+
+		display:inline-block;
+		position:relative;
+		border:1px solid #ddd;
+		background:#fff;
+		padding:3px;
+		margin:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px;
+	}
+
+	.gallery a img{
+		display: block;
+		position: relative;
+
+		margin:0;
+		padding:0;
+	}
+
+
+	.menu{
+		text-align: center;
+		background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(224,224,224,1) 100%);
+		background: none;
+		border: 0;
+	}
+	.menu li{
+
+	}
+	.menu li a{
+		text-shadow:0px 1px 1px #fff;
+		padding:15px 20px;
+		font-weight: 900;
+		text-decoration: none;
+		font-size:0.9em;
+		color: #DC143C;
+	}
+
+
+	button,
+	a.btn,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"]{
+		font-family: "Arimo", arial, verdana, sans-serif;
+	}
+
+
+
+	.tel{ height: 50px; margin:50px; color: #DC143C; }
+
+	.barra_redes{ height: 46px; position: fixed; top: 80px ; right: 150px; z-index: 199; }
+
+	.icones_redes i{ font-size: 25px; color:#DC143C;transition: all .5s; }
+	.icones_redes i:hover{  color: #777; transform:scale(1.05); }
+
+	.menu{
+		font-family: "Arimo", arial, verdana, sans-serif;
+	}
+
+	blockquote{
+		font-family: "Arimo", arial, verdana, sans-serif;
+	}
+
+/*---------------------------------
+	LAYOUT
+	-----------------------------------*/
+	body{
+		margin:0;
+		padding:0 0 0 0;
+		color:#000;
+		background:#efefef url(css/img/gray_jean.png);
+		font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
+		text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+	}
+
+	.banner{ width: 100%; border-bottom: 2px solid #fc0;} 
+	.item_banner{   width: 100%; padding-top: 150px !important; padding-bottom: 150px !important; background-size: cover !important;}
+	.item_banner span{ display: block;   padding: 20px; text-align: center; color: #111; font-family: 'Georgia'; font-size: 18px; background: rgba(255,255,255,.8);
+	width: 80%; float: inherit; margin-right:inherit; margin: 0 auto; display: block !important; }
+
+	#wrap{
+		width:100%;
+		background:#fff;
+		margin:30px auto 30px auto;
+		padding:0 2%;
+		border:1px solid #ccc;
+	}
+
+
+	#footer{
+		text-align:center;
+		padding:20px;
+		margin:0;
+		border-top:1px solid #ddd;
+		color:#999;
+		font-size:0.8em;
+		text-shadow:0px 1px 1px #fff;
+		position: relative;
+		top:0;
+		left:0;
+		background:#fff;
+	}
+
+	#link-top{
+		display:none;
+	}
+
+	/* NAV BAR*/
+	.navbar{
+		position:fixed;
+		top:0;
+		left:0;
+		width: 100%;
+		background:#000;
+		color:#fff;
+		z-index:1000;
+	}
+
+	.navbar #logo{
+		position:absolute;
+		top:0;
+		right:0;
+		padding:0.5em 1em;
+		font-size: 1.7em;
+		color:#efefef;
+		text-decoration:none;
+	}
+
+	.navbar span{
+		color:#86dc00;
+	}
+
+
+	.navbar ul{
+		display:inline-block;
+		margin:0;
+		padding:0;
+	}
+
+	.navbar li{
+		margin:0;
+		padding:0;
+		list-style-type:0;
+		display:inline-block;
+	}
+
+	.navbar li a{
+		display:inline-block;
+		color:#efefef;
+		padding:1em 1.3em;
+		text-decoration:none;
+		text-transform: uppercase;
+		line-height:100%;
+		font-size: 1.2em;
+	}
+
+	.callout{
+		background:#4598ef;/*#86dc00;*/
+		padding:3em 0;
+		color:#fff;
+		box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+		text-align: center;
+		text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+		display:block;
+	}
+	.callout + div.grid{margin-top:50px;}
+	a.callout{cursor:pointer;}
+	.callout i.icon-4x{font-size:6em;}
+	.callout h4{margin-bottom:30px;}
+	.callout-top{margin:50px 0 0 0;}
+	.callout p{margin-bottom:0;}
+	.callout .button{margin-top:10px;}
+.callout.green{background:#19ad0b;/*#86dc00;*/}
+
+#mc_embed_signup{
+	padding:30px 0;
+}
+
+#ui-preview{
+	border:5px solid #ddd;
+	margin:30px 0;
+	display:block;
+}
